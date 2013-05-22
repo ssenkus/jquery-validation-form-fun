@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/base.css" /> 
+        <title>jQuery Form Validation</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="formContainer">
+            <form id="customerInfo" action="index.html" method="post">
+                <p style="margin:0 0 0 0;">Required<span class="requiredAst">*</span></p>
+                    <div class="fieldContainer">
+                            <label for="formFName" class="formFieldLabel">First Name<span class="requiredAst">*</span></label>
+                            <input name="formFName" type="text" id="formFName" class="required" />
+                            <div id="formFNameIcon" class="validBox"></div>
+                    </div>
+                    <div class="fieldContainer">
+                            <label for="formLName" class="formFieldLabel">Last Name<span class="requiredAst">*</span></label>
+                            <input name="formLName" type="text" id="formLName" class="required" />
+                            <div class="validBox"></div>
+                    </div>
+                    <div class="fieldContainer">
+                            <label for="formCompany" class="formFieldLabel">Company</label>
+                            <input name="formCompany" type="text" id="formCompany" />
+                            <div class="validBox"></div>
+                    </div>
+                    <div class="fieldContainer">
+                            <label for="formSAdr1" class="formFieldLabel">Street Address 1<span class="requiredAst">*</span></label>
+                            <input name="formSAdr1" type="text" id="formSAdr1" class="required"/>
+                            <div class="validBox"></div>
+                                                    <div class="errMsg"></div>
+                    </div>	
+                    <div class="fieldContainer">
+                            <label for="formSAdr2" class="formFieldLabel">Street Address 2</label>
+                            <input name="formSAdr2" type="text" id="formSAdr2" />
+                            <div class="validBox"></div>
+                    </div>
+                    <div class="fieldContainer">
+                            <label for="formEmail" class="formFieldLabel">Email Address<span class="requiredAst">*</span></label>
+                            <input name="formEmail" type="text" id="formEmail" class="required" />
+                            <div class="validBox"></div>
+                    </div>	
+                    <div class="fieldContainer">
+                            <label for="formPhoneNumber" class="formFieldLabel">Phone Number<span class="requiredAst">*</span></label>
+                            <input name="formPhoneNumber" type="text" id="formPhoneNumber" class="required" />
+                            <div class="validBox"></div>
+
+                    </div>	
+                    <div class="fieldContainer">
+                            <label for="formUserName" class="formFieldLabel">User Name<span class="requiredAst">*</span></label>
+                            <input name="formUserName" type="text" id="formUserName" class="required" />
+                            <div class="validBox"></div>
+                    </div>	
+                    <div class="fieldContainer">
+                            <label for="formPassword" class="formFieldLabel">Password<span class="requiredAst">*</span></label>
+                            <input name="formPassword" type="password" id="formPassword" class="required" />
+                            <div class="validBox"></div>
+                    </div>	
+                    <div class="">
+                            <input type="submit" value="Submit" class="submit" />
+                    </div>
+            </form>
+        </div>
+        <div id="formInfo">
+            <h2>Sign up for a new account!</h2>
+            
+            <p>Click here for a list of benefits:</p>
+            <ul id="regBenefitsList">
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Quisque nec elit non elit consectetur consectetur at sed tortor.</li>
+                <li>Vivamus lacinia enim nec dolor gravida eget eleifend dui sagittis.</li>
+                <li>Suspendisse pharetra odio ut elit auctor eget feugiat risus ullamcorper.</li>
+                <li>Morbi auctor sapien nulla, vitae blandit felis.</li>
+                <li>Aliquam tempor justo ut magna varius feugiat.</li>
+                <li>Donec sagittis ullamcorper dui, lobortis mollis odio pretium sit amet.</li>
+            </ul>
+
+        </div>
+        <div class="divider"></div>
+    </div>
+    <script type="text/javascript" src="scripts/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="scripts/jquery-validation-1.11.1/dist/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.inputmask-2.x/dist/jquery.inputmask.bundle.js"></script> 
+    <script type="text/javascript" src="scripts/custom-script.js"></script>
+</body>
+
+</html>

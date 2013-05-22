@@ -1,0 +1,32 @@
+/*
+ * This is a JavaScript Scratchpad.
+ *
+ * Enter some JavaScript, then Right Click or choose from the Execute Menu:
+ * 1. Run to evaluate the selected text (Ctrl+R),
+ * 2. Inspect to bring up an Object Inspector on the result (Ctrl+I), or,
+ * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
+ */
+
+
+// checks all form fields for validation
+//$('#customerInfo').validate().form();
+
+// validate a single element
+//$("#customerInfo").validate().element( "#formPhoneNumber" );
+
+// reset the form!
+//$("#customerInfo").validate().resetForm();
+
+// form input field styles need to be a part of the validation plugin
+// password field length, mask, and strength
+
+// show a custom error message at will
+//$("#customerInfo").validate().showErrors({'formEmail':'sdfsdf'});
+//
+
+
+// number of invalids; form needs to be checked first!
+//$('#customerInfo').validate().form();
+//alert( $("#customerInfo").validate().numberOfInvalids() );
+
+    

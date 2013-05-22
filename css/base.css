@@ -1,0 +1,191 @@
+/* Page layout and structure */ 
+
+body {
+	background-color: #ddd;
+	padding: 20px 0 0 20px;
+	margin: 0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:  15px;
+	color: #111;
+
+}
+
+#wrapper {
+        width: 100%;
+        max-width: 1000px;
+        background-color: #dadada;
+        margin: 10px auto 10px;    
+    
+}
+
+#formContainer {
+	background: -webkit-gradient(linear, bottom, left 175px, from(#DDDD88), to(#AAAA77));
+	background: -moz-linear-gradient(bottom, #DDDD88, #AAAA77 175px);
+	position:relative;
+	width:600px;
+	font-weight: bold;
+	text-decoration: none;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding:10px;
+	border: 1px solid #999;
+	border: inset 1px solid #333;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);    
+        float: left;
+        margin: 0 15px 0 0;
+}
+
+#formInfo {
+		width: 300px;
+		float: left;
+		height: 300px;
+		background-color: #99d;
+		border: 1px solid #999;
+		border: inset 1px solid #333;
+		-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+		-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+		box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);    
+	padding: 10px;
+	font-size: 12px;
+       
+}
+
+
+
+
+.fieldContainer {
+	width: 600px;
+	margin: 2px auto;
+	float:left;
+	clear: left;
+	background-color: #995;
+
+}
+.fieldContainer input {
+	float: left;
+	margin: 4px 0;
+	width: 100px;
+	height: 15px;
+	border: 1px solid #000;
+	padding: 0px;
+}
+
+input:focus {
+	border: 1px solid #88d;
+	box-shadow: -2px 1px 0px #88d;
+	background-color: #fff!important;
+}
+input:focus + div {
+	background-color: #88d;
+	border-color: #88d;
+}
+
+.formFieldLabel {
+	float: left;
+	padding: 0px 10px 0px;
+	width: 130px;
+	text-align: right;
+	height: 25px;
+	color: #fff;
+	line-height:25px;
+	text-shadow: -1px 1px 0px #000;
+}
+
+.validBox {
+	background-image: url('../images/sprite-icons.png');
+	background-color: #000;
+	width: 23px;
+	height: 23px;
+	border:1px solid #000;
+	border-radius: 25px;
+	float: left;
+	margin:1px 0 0 5px;
+}
+
+#formFName + div, #formLName + div { background-position: -228px -164px; }
+#formCompany + div { background-position: -164px -132px; }
+#formSAdr1 + div, #formSAdr2 + div { background-position: -69px -197px; }
+#formEmail + div { background-position: -197px -133px; }
+#formPhoneNumber + div { background-position: -132px -260px; }
+#formUserName + div { background-position: -132px -131px;}
+#formPassword + div { background-position: -100px -196px;}
+
+
+/* Individual form field styles */
+#formFName:focus + div, #formLName:focus + div {}
+#formCompany:focus + div {}
+#formSAdr1:focus + div {}
+#formSAdr2:focus + div {}
+#formEmail:focus + div {}
+#formPhoneNumber:focus + div {}
+
+
+input[type="submit"] {
+	float: left; 
+	margin-left: 150px; 
+	height: 25px;
+	width: 102px; 
+	border-radius: 25px; 
+	font-weight: bold;
+	color: #fff;
+}
+input[type="submit"]:focus {
+	background-color: #fd3!important;
+	color:#000;
+}
+
+div.error {
+	float: left;
+	color: #fff;
+	background-color: #f00;
+	font-size: 11px;
+	height: 25px;
+	margin-left: 10px;
+	display: block;
+	line-height: 25px;
+	padding: 0px 10px;
+}
+
+input:focus {
+	border:1px solid #090;
+}
+/* webkit, opera, IE9 */
+input::selection {
+	background:#da0;
+
+}
+/* mozilla firefox */
+input::-moz-selection {
+	background:#da0;
+}
+
+/* Validation styles */
+
+.validIcon {
+	background: url('../images/sprite-icons.png') no-repeat -260px -259px #0d0 !important;
+	border-color: #0d0;
+}
+
+.errorIcon {
+	background: url('../images/sprite-icons.png') no-repeat -132px -99px #f00 !important;
+	border-color: #f00;
+}
+
+.errorInput {
+	background-color: #f66!important;
+	border-color: #f00!important;
+
+}
+
+.validInput {
+	border-color: #070!important;
+	background-color: #194!important;
+}
+
+
+/* Utility styles */
+.divider { height: 1px; clear: both; }
+.requiredAst { color: #f00; text-shadow: none; }
